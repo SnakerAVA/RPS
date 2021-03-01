@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-bonus.svg" alt="logo">
+        <div class="count-block">
+            <p>SCORE</p>
+            <div class="counter">
+                <p>0</p>
+            </div>
+        </div>
+    </header>
+    <div class="chose bonus">
+        <div class="user-field bonus-user-field">
+            <div class="b-first-line">
+                <button class="field scissors" data-field="scissors"></button>
+            </div>
+            <div class="b-second-line">
+                <button class="field spock" data-field="spock"></button>
+                <button class="field paper" data-field="paper"></button>
+            </div>
+            <div class="b-third-line">
+                <button class="field lizard" data-field="lizard"></button>
+                <button class="field rock" data-field="rock"></button>
+            </div>
+        </div>
+        <div class="comp-field hide">
+            <button class="field paper" data-field="paper"></button>
+            <button class="field scissors" data-field="scissors"></button>
+            <button class="field rock" data-field="rock"></button>
+            <button class="field lizard" data-field="lizard"></button>
+            <button class="field spock" data-field="spock"></button>
+        </div>
+    </div>
+    <div class="hide conclusion">
+        <div class="pickblock">
+            <h2>YOU PICKED</h2>
+            <button id="user-pick"></button>
+        </div>
+        <div class="game-result">
+            <h3 class="result"></h3>
+            <button class="play hide">PLAY AGAIN</button>
+        </div>
+        <div class="pickblock">
+            <h2>THE HOUSE PICKED</h2>
+            <button class="unactive" id="comp-pick"></button>
+        </div>
+    </div>
+    <div class="rules">          
+        <a href="#popup1" class="rules">RULES</a>
+        
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>RULES</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <img src="images/image-rules-bonus.svg" alt="rules">            
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app-bonus.js"></script>
+</body>
+</html>
